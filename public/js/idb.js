@@ -24,7 +24,7 @@ request.onerror = function(event) {
 }; 
 
 //this function will be executed if we attempt to submit transactions and there's no internet connection
-function saveTransaction(record) {
+function saveRecord(record) {
     const transaction = db.transaction(['new_transaction'], 'readwrite');
 
     const transactionObjectStore = transaction.objectStore('new_transaction');
